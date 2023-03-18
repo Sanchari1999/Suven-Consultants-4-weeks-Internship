@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
-    --main-color: #DD2F6E;
+    --main-color: #da9e98;
     --color-dark: #1D2231;
     --text-grey: #8390
 }
@@ -13,4 +13,23 @@
     list-style-type: none;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    width: 330px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--main-color);  
+}
+
+.sidebar-brand {
+    height: 90px;
+    padding: 1rem 0rem 1rem 2rem;
+    color: #f4efef;
+}
+
+.main-content {
+    margin-left: 330px;;
 }
