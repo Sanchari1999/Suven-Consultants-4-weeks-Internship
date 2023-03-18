@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
-    --main-color: #da9e98;
+    --main-color: #e1afaa;
     --color-dark: #1D2231;
     --text-dark: #3f403a;
     --text-light: #f4efef;
@@ -65,6 +65,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* add box shadow */
 }
   
 header h1 {
@@ -100,9 +101,18 @@ header .user-wrapper img {
     margin-right: 10px;
 }
 
+.search-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px;
+}
+
 .search-wrapper input[type="search"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px;
+    outline: none; /*Gets rid of the extra box when clicking to type something inside the searchbox.*/
 }
+
+
 
