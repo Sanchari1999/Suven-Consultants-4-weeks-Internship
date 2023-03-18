@@ -3,12 +3,13 @@
 :root {
     --main-color: #da9e98;
     --color-dark: #1D2231;
-    --text-grey: #8390
+    --text-dark: #3f403a;
+    --text-light: #f4efef;
 }
 
 * {
     padding: 5px;
-    margin: 5px;
+    margin: 4px;
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
@@ -20,6 +21,7 @@
     position: fixed;
     left: 0;
     top: 0;
+    bottom: 2px;
     height: 100%;
     background: var(--main-color);  
 }
@@ -27,9 +29,38 @@
 .sidebar-brand {
     height: 90px;
     padding: 1rem 0rem 1rem 2rem;
-    color: #f4efef;
+    color: var(--text-light);
+}
+
+.sidebar-brand span {
+    display: inline-block;
+}
+
+.sidebar-menu li {
+    width: 100%;
+    padding: 2px;
+    font-size:17px;
+}
+
+.sidebar-menu a {
+    display: block;
+    color:#f0ffff;
+}
+
+.sidebar-menu a.active {
+    background: #b49090;
+    border-radius: 25px;
+}
+
+.sidebar-menu a span:first-child {
+    font-size: 1.2rem;
 }
 
 .main-content {
     margin-left: 330px;;
+}
+
+.header {
+    display:flex;
+    justify-content: space-between;
 }
