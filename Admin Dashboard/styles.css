@@ -123,6 +123,8 @@ main {
 .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .card-single {
@@ -133,6 +135,25 @@ main {
     border-radius: 8px;
 }
 
-.card-single h1 {
+.card-single h1, span {
+    color: var(--text-dark);
+}
 
+.card-single span {
+    font-size: 1.5rem;
+}
+
+.card-single div:last-child span {
+    color: #7EA8C5;
+    font-size: 4rem;
+}
+
+.card-single:last-child {
+    background: #7EA8C5;
+}
+
+.card-single:last-child div:last-child span, 
+.card-single:last-child h1,
+.card-single:last-child div:first-child span {
+    color:#fff;
 }
